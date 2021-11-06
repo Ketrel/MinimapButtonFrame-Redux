@@ -1,0 +1,10 @@
+## Interface: 80000
+## Title: Minimap Button Frame Skin Pack
+## Notes: Skin Pack for MinimapButtonFrame.
+## Author: Bachlott
+## Version: 3.0.1b
+## OptionalDeps: MBF
+## X-Category: Interface Enhancements
+## X-Date: 2009-6-7
+
+Skins.lua

@@ -1,0 +1,21 @@
+To Add a skin to the list in MBF use the function
+
+MBFAddSkin( "NAME", "BorderPath" , "BackdropPath", size)
+
+The size value really should always be 35 but I've left it as an option just in case.
+
+The easiest way is to create a small addon that with the lua file containing only
+
+
+
+if not IsAddOnLoaded("MinimapButtonFrame") then
+	return
+end
+
+MBFAddSkin( "NAME", "BorderPath" , "BackdropPath", size)
+
+
+
+
+
+You would still have to create a .TOC file as per a normal addon and make sure that your textures were included.
