@@ -1967,13 +1967,13 @@ function MBFC_ColorLocked()
         MinimapButtonFrame:SetBorderColor(0,0,0,0)
 	elseif ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "Border")) then
         MinimapButtonFrame:SetCenterColor(red, green, blue, opacity)
-        MinimapButtonFrame:SetBorderColor(0,0,0,0)
+        MinimapButtonFrame:SetBorderColor(0,0,0,opacity)
 	elseif ((bachMBF.db.profile.locked) and (bachMBF.db.profile.colorLocked == "Background")) then
         MinimapButtonFrame:SetCenterColor(0,0,0,0)
         MinimapButtonFrame:SetBorderColor(1,1,1,1)
 	else
         MinimapButtonFrame:SetCenterColor(red, green, blue, opacity)
-        MinimapButtonFrame:SetBorderColor(1,1,1,1)
+        MinimapButtonFrame:SetBorderColor(1,1,1,opacity)
 
 	end
 end
