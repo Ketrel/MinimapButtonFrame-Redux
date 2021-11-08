@@ -1,0 +1,29 @@
+﻿## Interface: 90105
+## Title: Minimap Button Frame Redux
+## Notes: Collects the minimap buttons and puts them into a moveable frame.
+## Notes-deDE: Sammelt die Minikarte Tasten und stellt sie in einen beweglichen Rahmen.
+## Notes-esES: Reúne el minimapa botones y los pone en un marco de muebles.
+## Notes-frFR: Collecte de la mini-boutons et les met dans un cadre mobile.
+## Notes-koKR: 미니 단추와 그들을 집결 선수야 프레임 이동합니다.
+## Notes-ruRU: Собирает кнопки с мини-карты и помещает их в отдельное, передвижное окно.
+## Notes-zhCN: 收集minimap按钮和使他们成为一个可移动的框架。
+## Notes-zhTW: 收集minimap按鈕和使他們成為一個可移動的框架。
+## Author: Bachlott
+## Version: 1.0.0
+## SavedVariables: MBFDB
+## OptionalDeps: Ace3, LibDataBroker-1.1, LibAboutPanel
+## X-Embeds: Ace3, LibDataBroker-1.1, LibAboutPanel
+## X-eMail: qflux@hotmail.com
+## X-Website: http://wow.curse.com/downloads/wow-addons/details/minimap-button-frame.aspx
+## X-Date: 2021-11-07
+## X-Category: Interface Enhancements
+## X-Localizations: enUS, deDE, frFR, esES, koKR, ruRU, zhCN, zhTW
+## X-WoWI-ID: 7929
+
+embeds.xml
+
+locale.xml
+
+MinimapButtonFrameRedux.lua
+MinimapButtonFrameRedux.xml
+

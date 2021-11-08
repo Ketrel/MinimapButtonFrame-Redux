@@ -1,0 +1,12 @@
+tag v1.43
+eb04f6ddae3bb4c6faabe5aee16d55c96a768c1c
+John Pasula <ackis@shaw.ca>
+2009-12-18 15:27:48 -0700
+
+Tagging.
+
+
+--------------------
+
+John Pasula:
+	- ToC/Version update.
