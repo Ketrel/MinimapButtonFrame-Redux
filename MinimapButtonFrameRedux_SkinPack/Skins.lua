@@ -1,4 +1,4 @@
-if not IsAddOnLoaded("MinimapButtonFrame") then
+if not IsAddOnLoaded("MinimapButtonFrameRedux") then
 	return
 else
 
