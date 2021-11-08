@@ -1,5 +1,5 @@
 ﻿## Interface: 90105
-## Title: Minimap Button Frame
+## Title: Minimap Button Frame Redux
 ## Notes: Collects the minimap buttons and puts them into a moveable frame.
 ## Notes-deDE: Sammelt die Minikarte Tasten und stellt sie in einen beweglichen Rahmen.
 ## Notes-esES: Reúne el minimapa botones y los pone en un marco de muebles.
@@ -9,7 +9,7 @@
 ## Notes-zhCN: 收集minimap按钮和使他们成为一个可移动的框架。
 ## Notes-zhTW: 收集minimap按鈕和使他們成為一個可移動的框架。
 ## Author: Bachlott
-## Version: 5.0.0
+## Version: 1.0.0
 ## SavedVariables: MBFDB
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibAboutPanel
 ## X-Embeds: Ace3, LibDataBroker-1.1, LibAboutPanel
@@ -24,6 +24,6 @@ embeds.xml
 
 locale.xml
 
-MinimapButtonFrame.lua
-MinimapButtonFrame.xml
+MinimapButtonFrameRedux.lua
+MinimapButtonFrameRedux.xml
 

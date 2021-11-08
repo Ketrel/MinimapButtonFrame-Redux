@@ -1934,8 +1934,8 @@ function MBFC_KeepBlizzHidden()
 end
 
 function MBFC_LoadStandardSkins()
-	MBFAddSkin("Blizzard", "Interface\\AddOns\\MinimapButtonFrame\\Textures\\BlizzBorder.tga", nil, 55);
-	MBFAddSkin("Blizzard Square", "Interface\\AddOns\\MinimapButtonFrame\\Textures\\BlizzSquare.tga", "Interface\\Buttons\\UI-EmptySlot", 45);
+	MBFAddSkin("Blizzard", "Interface\\AddOns\\MinimapButtonFrameRedux\\Textures\\BlizzBorder.tga", nil, 55);
+	MBFAddSkin("Blizzard Square", "Interface\\AddOns\\MinimapButtonFrameRedux\\Textures\\BlizzSquare.tga", "Interface\\Buttons\\UI-EmptySlot", 45);
 end
 
 function MBFC_CheckSkin()
