@@ -1,0 +1,3 @@
+package-as: MinimapButtonFrameRedux
+movee-folders:
+    MinimapButtonFrameRedux/Skins: MinimapButtonFrameRedux_Skins
