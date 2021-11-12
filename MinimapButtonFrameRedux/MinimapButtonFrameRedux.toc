@@ -13,12 +13,7 @@
 ## SavedVariables: MBFDB
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibAboutPanel
 ## X-Embeds: Ace3, LibDataBroker-1.1, LibAboutPanel
-## X-eMail: qflux@hotmail.com
-## X-Website: http://wow.curse.com/downloads/wow-addons/details/minimap-button-frame.aspx
-## X-Date: 2021-11-07
-## X-Category: Interface Enhancements
-## X-Localizations: enUS, deDE, frFR, esES, koKR, ruRU, zhCN, zhTW
-## X-WoWI-ID: 7929
+## X-Curse-Project-ID: 545439
 
 embeds.xml
 
