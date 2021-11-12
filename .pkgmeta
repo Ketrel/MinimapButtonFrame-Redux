@@ -1,7 +1,8 @@
 package-as: MinimapButtonFrameRedux
 
 move-folders:
-    MinimapButtonFrameRedux/Skins: MinimapButtonFrameRedux_Skins
+    MinimapButtonFrameRedux/MinimapButtonFrameRedux/Skins: MinimapButtonFrameRedux_Skins
+    MinimapButtonFrameRedux/MinimapButtonFrameRedux: MinimapButtonFrameRedux
 
 ignore:
     - README.md
