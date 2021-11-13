@@ -122,8 +122,8 @@ local display = {
 		},
         dragLocked = {
             order   = 5,
-            type    = "toggle",
-            name    = "Lock Drag",
+            type    = L["dragLocked"],
+            name    = L["DRAGLOCKED_DESC"],
             desc    = "Disable dragging the button and frame.",
             get     = function () return bachMBF.db.profile.dragLocked end,
             set     = function () bachMBF.db.profile.dragLocked = not bachMBF.db.profile.dragLocked end,
