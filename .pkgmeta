@@ -7,3 +7,5 @@ move-folders:
 ignore:
     - README.md
 
+manual-changelog: CHANGELOG.md
+

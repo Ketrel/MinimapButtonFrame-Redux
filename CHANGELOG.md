@@ -1,12 +1,7 @@
-## In-Dev
+## v1.1.0
 
 * Added more consistant behavior to lock/unlock as far as button visibility
-
-
-## v1.0.1-beta
-
 * Added a drag lock option to prevent dragging the button if desired
-
 
 ## v1.0.0
 
