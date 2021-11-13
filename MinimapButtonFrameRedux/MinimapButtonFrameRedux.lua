@@ -120,8 +120,16 @@ local display = {
 					MBFC_ColorLocked()
 				end,
 		},
+        dragLocked = {
+            order   = 5,
+            type    = "toggle",
+            name    = "Lock Drag",
+            desc    = "Disable dragging the button and frame.",
+            get     = function () return bachMBF.db.profile.dragLocked end,
+            set     = function () bachMBF.db.profile.dragLocked = not bachMBF.db.profile.dragLocked end,
+        },
 		altTitle = {
-			order	= 5,
+			order	= 6,
 			type	= "toggle",
 			name	= L["ALTTITLE_DESC"],
 			desc	= L["ALTTITLEDESC_DESC"],
@@ -131,7 +139,7 @@ local display = {
 				end,
 		},
 		space1 = {
-			order	= 6,
+			order	= 7,
 			name	= "\n",
 			type	= "description",
 		},
@@ -788,7 +796,7 @@ function bachMBF:OnInitialize()
 
 	self:Init();
 
-	MinimapButtonFrame:RegisterForDrag("LeftButton");
+    MinimapButtonFrame:RegisterForDrag("LeftButton");
 	MinimapButtonFrameDragButton:RegisterForClicks("RightButtonUp");
 	MBFRestoreButton:RegisterForClicks("RightButtonUp");
 
@@ -941,14 +949,14 @@ function displayInfo(target)
 end
 
 function bachMBF:OnDragStart()
-	if (bachMBF.db.profile.locked == false) then
+	if (bachMBF.db.profile.locked == false and not bachMBF.db.profile.dragLocked) then
 		MinimapButtonFrame:StartMoving();
 		MinimapButtonFrame.isMoving = true;
 	end
 end
 
 function bachMBF:OnDragStop()
-	if (bachMBF.db.profile.locked == false) then
+	if (bachMBF.db.profile.locked == false and not bachMBF.db.profile.dragLocked) then
 		MinimapButtonFrame:StopMovingOrSizing();
 		MinimapButtonFrame.isMoving = false;
 		MinimapButtonFrame:SetUserPlaced(false);
