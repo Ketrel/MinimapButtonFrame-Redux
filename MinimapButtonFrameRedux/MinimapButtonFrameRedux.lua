@@ -110,7 +110,8 @@ local display = {
 			desc	= L["LOCKED_DESC"],
 			get	= function() return bachMBF.db.profile.locked end,
 			set	= function() bachMBF.db.profile.locked = not bachMBF.db.profile.locked 
-					if not bachMBF.db.profile.locked and not bachMBF.db.profile.mbfHidden then
+					--if not bachMBF.db.profile.locked and not bachMBF.db.profile.mbfHidden then
+                    if not bachMBF.db.profile.locked then
 						MinimapButtonFrameDragButton:Show()
 						MBFRestoreButtonFrame:Show()
 					else
