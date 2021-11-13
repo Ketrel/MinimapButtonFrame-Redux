@@ -67,6 +67,9 @@ L["BUTTONTEXT_DESC"] = "Texte à afficher sur le bouton"
 L["Locked"] = "Verrouillé"
 L["LOCKED_DESC"] = "Passe si la MBF cadre est verrouillé."
 
+L["dragLocked"] = "Serrure de mouvement" 
+L["DRAGLOCKED_DESC="] = "Empêchez le bouton et le cadre d'être déplacé."
+
 L["Hide when Locked"] = "Masquer en position verrouillée"
 L["HIDELOCKED_DESC"] = "Quelle portion de l'image doit être cachée lorsque le cadre est verrouillé."
 
