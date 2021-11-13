@@ -69,7 +69,7 @@ L["Locked"] = "锁定"
 L["LOCKED_DESC"] = "医疗保险基金切换帧是否已被锁定。"
 
 L["dragLocked"] = "运动锁"
-L["DRAGLOCKED_DESC="] = "阻止按钮和框架被移动。" 
+L["DRAGLOCKED_DESC"] = "阻止按钮和框架被移动。" 
 
 L["Hide when Locked"] = "锁定后隐藏框体背景"
 L["HIDELOCKED_DESC"] = "什么部分的框架时，应隐藏帧是锁定的。"

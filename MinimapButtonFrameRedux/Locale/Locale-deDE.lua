@@ -68,7 +68,7 @@ L["Locked"] = "Gesperrt"
 L["LOCKED_DESC"] = "Wechselt, ob die MBF Rahmen ist gesperrt."
 
 L["dragLocked"] = "Bewegungsschloss"
-L["DRAGLOCKED_DESC="] = "Verhindern, dass der Knopf und der Rahmen verschoben werden soll."
+L["DRAGLOCKED_DESC"] = "Verhindern, dass der Knopf und der Rahmen verschoben werden soll."
 
 L["Hide when Locked"] = "Ausblenden wenn gesperrt"
 L["HIDELOCKED_DESC"] = "Was Teil des Rahmens sollte nicht angezeigt, wenn der Rahmen ist gesperrt."

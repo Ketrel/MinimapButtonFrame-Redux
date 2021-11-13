@@ -69,7 +69,7 @@ L["Locked"] = "고정"
 L["LOCKED_DESC"] = "MBF 프레임의 고정 여부를 전환합니다."
 
 L["dragLocked"] = "움직임 잠금"
-L["DRAGLOCKED_DESC="] = "버튼과 프레임이 이동되지 않도록하십시오." 
+L["DRAGLOCKED_DESC"] = "버튼과 프레임이 이동되지 않도록하십시오." 
 
 L["Hide when Locked"] = "고정 시 숨김"
 L["HIDELOCKED_DESC"] = "프레임이 고정되면 프레임의 일부분이 숨겨지게 됩니다."

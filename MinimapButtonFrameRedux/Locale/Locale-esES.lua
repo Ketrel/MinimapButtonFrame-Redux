@@ -68,7 +68,7 @@ L["Locked"] = "Cerrado"
 L["LOCKED_DESC"] = "Alterna si la CSM marco está bloqueado." 
 
 L["dragLocked"] = "Cerradura de movimiento" 
-L["DRAGLOCKED_DESC="] = "Evite que el botón y el marco se muevan."
+L["DRAGLOCKED_DESC"] = "Evite que el botón y el marco se muevan."
 
 L["Hide when Locked"] = "Ocultar una vez cerradas"
 L["HIDELOCKED_DESC"] = "¿Qué porción de la imagen debe estar oculto cuando el marco está bloqueado." 

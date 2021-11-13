@@ -67,7 +67,7 @@ L["Locked"] = true
 L["LOCKED_DESC"] = "Toggles whether the MBF frame is locked."
 
 L["dragLocked"] = "Lock Dragging"
-L["DRAGLOCKED_DESC="] = "Prevent the button and frame from being moved."
+L["DRAGLOCKED_DESC"] = "Prevent the button and frame from being moved."
 
 L["Hide when Locked"] = true
 L["HIDELOCKED_DESC"] = "What portion of the frame should be hidden when the frame is locked."

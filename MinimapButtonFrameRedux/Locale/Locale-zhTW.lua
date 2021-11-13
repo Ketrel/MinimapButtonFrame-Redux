@@ -68,7 +68,7 @@ L["Locked"] = "鎖定"
 L["LOCKED_DESC"] = "切換鎖定MBF框架"
 
 L["dragLocked"] = "運動鎖"
-L["DRAGLOCKED_DESC="] = "阻止按鈕和框架被移動。"
+L["DRAGLOCKED_DESC"] = "阻止按鈕和框架被移動。"
 
 L["Hide when Locked"] = "鎖定時隱藏部分"
 L["HIDELOCKED_DESC"] = "鎖定MBF時，隱藏其中的部分元件"
