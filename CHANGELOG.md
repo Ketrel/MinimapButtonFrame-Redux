@@ -1,3 +1,7 @@
+## v1.2.0
+
+* Change to pattern for processing chat commands to better support localization
+
 ## v1.1.0
 
 * Added more consistant behavior to lock/unlock as far as button visibility
