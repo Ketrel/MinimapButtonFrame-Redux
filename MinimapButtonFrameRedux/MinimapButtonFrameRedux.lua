@@ -852,7 +852,8 @@ function bachMBF:ChatCommand(input)
 	if not input or input:trim() == "" then
 		InterfaceOptionsFrame_OpenToCategory(self.optionsFrame)
 	else
-		local startPos, endPos, firstWord, restOfString = strfind(input, "(%w+)[%s%p]*(.*)");
+		--local startPos, endPos, firstWord, restOfString = strfind(input, "(%w+)[%s%p]*(.*)");
+		local startPos, endPos, firstWord, restOfString = strfind(input, "([^%s]+)[%s%p]*(.*)");
 		firstWord = strlower(firstWord)
 
 		if (firstWord == L["usage"]) then
