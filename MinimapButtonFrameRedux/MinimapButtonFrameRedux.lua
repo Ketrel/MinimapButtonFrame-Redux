@@ -37,7 +37,7 @@ local oldLevel;
 local oldStrata;
 
 
-local BlizzButtons = { "MiniMapTracking", "MiniMapWorldMapButton", "QueueStatusMinimapButton", "MinimapZoomIn", "MinimapZoomOut", "MiniMapMailFrame", "MiniMapBattlefieldFrame", "GameTimeFrame", "FeedbackUIButton" };
+local BlizzButtons = { "MiniMapTracking", "MiniMapWorldMapButton", "QueueStatusMinimapButton", "MinimapZoomIn", "MinimapZoomOut", "MiniMapMailFrame", "MiniMapBattlefieldFrame", "GameTimeFrame", "FeedbackUIButton", "ExpansionLandingPageMinimapButton" };
 local BlizzUI = { "ActionBar", "BonusActionButton", "MainMenu", "ShapeshiftButton", "MultiBar", "KeyRingButton", "PlayerFrame", "TargetFrame", "PartyMemberFrame", "ChatFrame", "ExhaustionTick", "TargetofTargetFrame", "WorldFrame", "ActionButton", "CharacterMicroButton", "SpellbookMicroButton", "TalentMicroButton", "QuestLogMicroButton", "SocialsMicroButton", "LFGMicroButton", "HelpMicroButton", "CharacterBag", "PetFrame",  "MinimapCluster", "MinimapBackdrop", "UIParent", "WorldFrame", "Minimap", "BuffButton", "BuffFrame", "TimeManagerClockButton", "CharacterFrame" };
 local BlizzParentStop = { "WorldFrame", "Minimap", "MinimapBackdrop", "UIParent", "MinimapCluster" }
 local SkinProtect = { "MinimapButtonFrameDragButton", "MBFRestoreButton", "GameTimeFrame" }
@@ -1303,7 +1303,7 @@ function MBFSkinMinimapButton(miniButton, override)
 	end
 
 	if not miniButton.MBFoTex then 
-		miniButton.MBFoTex = miniButton:CreateTexture("MBFOverlay",7);
+		miniButton.MBFoTex = miniButton:CreateTexture("MBFOverlay","ARTWORK",nil,7);
 	end
 
 	if (tBorder[bachMBF.db.profile.currentTexture] == nil) then
@@ -1321,7 +1321,7 @@ function MBFSkinMinimapButton(miniButton, override)
 	
 	if (override ~= 1) then
 		if not miniButton.MBFbTex then 
-			miniButton.MBFbTex = miniButton:CreateTexture("MBFBackground",-8); 
+			miniButton.MBFbTex = miniButton:CreateTexture("MBFBackground","ARTWORK",nil,-8); 
 		end
 
 		if (tBackdrop[bachMBF.db.profile.currentTexture] == nil) then
