@@ -1,3 +1,7 @@
+## v2.0.1
+
+* Updated to support Dragonflight Prepatch (10.0.0)
+
 ## v1.2.0
 
 * Change to pattern for processing chat commands to better support localization
