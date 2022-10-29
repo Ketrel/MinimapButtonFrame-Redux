@@ -168,6 +168,19 @@ local display = {
 			name	= "",
 			type	= "description",
 		},
+        grabExpansionButton = {
+            order   = 12,
+            type    = 'toggle',
+            name    = L['GRABEXPANSIONBUTTON']
+            desc    = L['GRABEXPANSIONBUTTON_DESC'],
+            get     = function () return bachMBF.db.profile.grabExpansionButton end,
+            set     = function () bachMBF.db.profile.grabExpansionButton = not bachMBF.db.profile.grabExpansionButton end,
+        },
+		space1 = {
+			order	= 13,
+			name	= "",
+			type	= "description",
+		},
 		opacity = {
 			order	= 20,
 			type	= "range",
@@ -1870,10 +1883,10 @@ end
 -- Config Functions
 
 function MBFC_Toggle ()
-	if InterfaceOptionsFrame:IsShown() then
-		InterfaceOptionsFrame:Hide();
+	if SettingsPanel:IsShown() then
+		SettingsPanel:Hide();
 	else
-		InterfaceOptionsFrame_OpenToCategory("MinimapButtonFrame");
+		SettingsPanel:OpenToCategory("MinimapButtonFrame");
 	end
 end
 
