@@ -5,6 +5,7 @@
 	<Anchors>
 		<Anchor point="CENTER"/>
 	</Anchors>
+  <!--
   <Backdrop bgFile="Interface/Tooltips/UI-Tooltip-Background" edgeFile="Interface/Tooltips/UI-Tooltip-Border" tile="true">
 	<EdgeSize>
 		<AbsValue val="16"/>
@@ -16,6 +17,7 @@
 		<AbsInset left="5" right="5" top="5" bottom="5"/>
 	</BackgroundInsets>
   </Backdrop>
+  -->
   <Frames>
 	<Button name="$parentDragButton" inherits="UIPanelButtonTemplate">
 		<NormalTexture name="MBFDragNormal"/>
@@ -118,6 +120,7 @@
 </Frame>
 
 <Frame name="MBFRestoreButtonFrame" parent="UIParent" enableMouse="true" movable="true" hidden="false" clampedToScreen="true" frameStrata="LOW">
+    <!--
 	<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="false">
 	    <BackgroundInsets>
 	        <AbsInset left="5" right="5" top="5" bottom="5" />
@@ -130,6 +133,7 @@
 		</EdgeSize>	
 		<Color r="1" g="0.5" b="0.5" />
 	</Backdrop>
+    -->
 	<Size>
 		<AbsDimension x="75" y="25"/>
 	</Size>
