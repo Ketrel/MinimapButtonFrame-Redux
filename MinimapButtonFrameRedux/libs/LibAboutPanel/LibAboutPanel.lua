@@ -178,7 +178,7 @@ function lib.OnShow(frame)
 				end
 			elseif (field == "Version") then
 				local addonversion = GetAddOnMetadata(frame.addonname, field)
-				-- Remove @project-revision@ and replace it with Repository
+				-- Remove 30 and replace it with Repository
 				addonversion = string.gsub(addonversion,"@project.revision@","Repository")
 				detail:SetText((haseditbox[field] and "|cff9999ff" or "").. addonversion)
 			else

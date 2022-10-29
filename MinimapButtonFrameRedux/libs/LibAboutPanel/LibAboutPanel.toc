@@ -14,7 +14,7 @@
 
 ## Interface: 30300
 ## Version: 1.43
-## X-Revision: @project-revision@
+## X-Revision: 30
 ## X-Date: 2009-12-18T22:27:31Z
 
 ## X-Category: Libraries
