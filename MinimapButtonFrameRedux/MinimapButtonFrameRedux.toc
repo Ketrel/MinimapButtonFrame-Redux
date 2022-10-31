@@ -9,13 +9,13 @@
 ## Notes-zhCN: 收集minimap按钮和使他们成为一个可移动的框架。
 ## Notes-zhTW: 收集minimap按鈕和使他們成為一個可移動的框架。
 ## Author: Bachlott
-## Version: 2.0.1
+## Version: 2.0.2
 ## SavedVariables: MBFDB
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibAboutPanel
 ## X-Embeds: Ace3, LibDataBroker-1.1, LibAboutPanel
 ## X-eMail: qflux@hotmail.com
 ## X-Website: http://wow.curse.com/downloads/wow-addons/details/minimap-button-frame.aspx
-## X-Date: 2022-10-29
+## X-Date: 2022-10-31
 ## X-Category: Interface Enhancements
 ## X-Localizations: enUS, deDE, frFR, esES, koKR, ruRU, zhCN, zhTW
 

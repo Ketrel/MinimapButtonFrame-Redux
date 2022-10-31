@@ -1,3 +1,7 @@
+## v2.0.2
+
+* Stop Collecting TomTom's Minimap Buttons
+
 ## v2.0.1
 
 * Updated to support Dragonflight Prepatch (10.0.0)
