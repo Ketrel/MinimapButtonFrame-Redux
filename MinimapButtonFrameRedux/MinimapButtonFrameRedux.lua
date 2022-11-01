@@ -1375,7 +1375,8 @@ saveOldData = function(miniButton)
 
 	if oldPoint ~= nil then
 		oldName = miniButton:GetName();
-		oldParentName = miniButton:GetParent():GetName();
+		--oldParentName = miniButton:GetParent():GetName();
+		oldParentName = miniButton:GetParent();
 		oldFrameLevel = miniButton:GetFrameLevel();
 		oldOnDragStart = miniButton:GetScript('OnDragStart');
 		oldOnDragStop = miniButton:GetScript('OnDragStop');
