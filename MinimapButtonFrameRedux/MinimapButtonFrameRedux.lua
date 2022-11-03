@@ -268,6 +268,11 @@ local display = {
 	},
 }
 
+local funcBack = {
+    minimapZoomInShow   = Minimap.ZoomIn.Show,
+    minimapZoomOutShow  = Minimap.ZoomOut.Show,
+    }
+
 local gathering = {
 	order = 2,
 	type = "group",
@@ -459,11 +464,15 @@ local gathering = {
 			get	= function() return bachMBF.db.profile.MBFHideMinimapZoomIn end,
 			set	= function(info, value) bachMBF.db.profile.MBFHideMinimapZoomIn = not bachMBF.db.profile.MBFHideMinimapZoomIn 
 					if bachMBF.db.profile.MBFHideMinimapZoomIn then
-						MinimapZoomIn:Hide()
-						MinimapZoomOut:Hide()
+						Minimap.ZoomIn:Hide()
+						Minimap.ZoomOut:Hide()
+                        Minimap.ZoomIn.Show = function() end
+                        Minimap.ZoomOut.Show = function() end
 					else
-						MinimapZoomIn:Show()
-						MinimapZoomOut:Show()
+                        Minimap.ZoomIn.Show = funcBack["minimapZoomInShow"]
+                        Minimap.ZoomOut.Show = funcBack["minimapZoomOutShow"]
+						Minimap.ZoomIn:Show()
+						Minimap.ZoomOut:Show()
 					end
 					bachMBF:Scan()
 				end,
@@ -1932,8 +1941,10 @@ function MBFC_KeepBlizzHidden()
 		MiniMapWorldMapButton:Hide();
 	end
 	if bachMBF.db.profile.MBFHideMinimapZoomIn  == true then
-		MinimapZoomIn:Hide();
-		MinimapZoomOut:Hide();
+        Minimap.ZoomIn.Show = function() end;
+        Minimap.ZoomOut.Show = function() end;
+		Minimap.ZoomIn:Hide();
+		Minimap.ZoomOut:Hide();
 	end
 	if bachMBF.db.profile.MBFHideMiniMapMailFrame == true then
 		MiniMapMailFrame:Hide();
