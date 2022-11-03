@@ -1,3 +1,7 @@
+## v2.0.4
+
+* Fixed handling the show/hide for the new Blizzard Minimap Zoom In/Out buttons
+
 ## v2.0.3
 
 * Fixed `/mbf add` and `/mbf remove`
