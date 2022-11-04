@@ -271,6 +271,9 @@ local display = {
 local funcBack = {
     minimapZoomInShow   = Minimap.ZoomIn.Show,
     minimapZoomOutShow  = Minimap.ZoomOut.Show,
+    minimapMail         = MinimapCluster.MailFrame,
+    minimapCalendar     = GameTimeFrame.Show,
+    minimapTracker      = MinimapCluster.Tracking,
     }
 
 local gathering = {
@@ -375,7 +378,8 @@ local gathering = {
 					end
 					bachMBF:Scan()
 				end,
-			disabled = function() if bachMBF.db.profile.grabBlizzButtons then return false end return true end,
+			--disabled = function() if bachMBF.db.profile.grabBlizzButtons then return false end return true end,
+			disabled = true,
 		},		
 		spacer1 = {
 			order	= 15,
@@ -390,11 +394,11 @@ local gathering = {
 			get	= function() return bachMBF.db.profile.MBFHideMiniMapMailFrame end,
 			set	= function(info, value) bachMBF.db.profile.MBFHideMiniMapMailFrame = not bachMBF.db.profile.MBFHideMiniMapMailFrame 
 					if bachMBF.db.profile.MBFHideMiniMapMailFrame then
-						MiniMapMailFrame:Hide()
+                        MinimapCluster.MailFrame:Hide()
 						bachMBF.db.profile.disabledMail = false
 					else
 						if (HasNewMail()) then
-							MiniMapMailFrame:Show()
+							MinimapCluster.MailFrame:Show()
 						end
 					end
 					bachMBF:Scan()
@@ -424,9 +428,10 @@ local gathering = {
 			get	= function() return bachMBF.db.profile.MBFHideMiniMapTracking end,
 			set	= function(info, value) bachMBF.db.profile.MBFHideMiniMapTracking = not bachMBF.db.profile.MBFHideMiniMapTracking 
 					if bachMBF.db.profile.MBFHideMiniMapTracking then
-						MiniMapTracking:Hide()
+						MinimapCluster.Tracking:Hide()
 					else
-						MiniMapTracking:Show()
+                        MinimapCluster.Tracking:Show()
+                        print('debug')
 					end
 					bachMBF:Scan()
 				end,
@@ -483,17 +488,20 @@ local gathering = {
 			type	= "description",
 		},
 		HideWorldMap = {
+            disabled = true,
 			order	= 41,
 			type	= "toggle",
 			name	= L["Hide World Map"],
 			desc	= L["WORLDMAP_DESC"],
 			get	= function() return bachMBF.db.profile.MBFHideMiniMapWorldMapButton end,
 			set	= function(info, value) bachMBF.db.profile.MBFHideMiniMapWorldMapButton = not bachMBF.db.profile.MBFHideMiniMapWorldMapButton 
-					if bachMBF.db.profile.MBFHideMiniMapWorldMapButton then
-						MiniMapWorldMapButton:Hide()
-					else
-						MiniMapWorldMapButton:Show()
-					end
+                    --I don't see any more discrete world map button, it appears integrated with the title frame
+					--if bachMBF.db.profile.MBFHideMiniMapWorldMapButton then
+						--MiniMapWorldMapButton:Hide()
+					--else
+						--MiniMapWorldMapButton:Show()
+					--else
+					--end
 					bachMBF:Scan()
 				end,
 		},
@@ -818,10 +826,10 @@ function bachMBF:Init()
 	
 	setMBFLocation();
 	
-	if (((bachMBF.db.profile.disabledMail == true) and (HasNewMail() == false)) and (((bachMBF.db.profile.grabBlizzButtons == true) and (isInTable(bachMBF.db.profile.MBF_Ignore,"MiniMapMailFrame") == false)) or ((bachMBF.db.profile.grabBlizzButtons == false) and (isInTable(bachMBF.db.profile.MBF_Include,"MiniMapMailFrame") == true)))) then
-		MiniMapMailFrameDisabled:Show();
-		MiniMapMailFrameDisabled:SetFrameLevel(MinimapButtonFrame:GetFrameLevel()+1)
-	end
+	--if (((bachMBF.db.profile.disabledMail == true) and (HasNewMail() == false)) and (((bachMBF.db.profile.grabBlizzButtons == true) and (isInTable(bachMBF.db.profile.MBF_Ignore,"MiniMapMailFrame") == false)) or ((bachMBF.db.profile.grabBlizzButtons == false) and (isInTable(bachMBF.db.profile.MBF_Include,"MiniMapMailFrame") == true)))) then
+		--MiniMapMailFrameDisabled:Show();
+		--MiniMapMailFrameDisabled:SetFrameLevel(MinimapButtonFrame:GetFrameLevel()+1)
+	--end
 
 	if (bachMBF.db.profile.locked) then
 		MinimapButtonFrameDragButton:Hide();
@@ -1833,13 +1841,13 @@ function bachMBF:Scan()
 		if currentProfile ~= self.db:GetCurrentProfile() then
 			setFrameDefaults()
 
-			MiniMapTracking:Show()
-			MiniMapWorldMapButton:Show()
-			MinimapZoomIn:Show()
-			MinimapZoomOut:Show()
+			MinimapCluster.Tracking:Show()
+			--MiniMapWorldMapButton:Show()
+			Minimap.ZoomIn:Show()
+			Minimap.ZoomOut:Show()
 			GameTimeFrame:Show()
 			if HasNewMail() then
-				MiniMapMailFrame:Show()
+				MinimapCluster.MailFrame:Show()
 			end
 			ClearMBF()
 		end
@@ -1935,11 +1943,11 @@ end
 
 function MBFC_KeepBlizzHidden()
 	if bachMBF.db.profile.MBFHideMiniMapTracking == true then
-		MiniMapTracking:Hide();
+        MinimapCluster.Tracking:Hide();
 	end
-	if bachMBF.db.profile.MBFHideMiniMapWorldMapButton == true then
-		MiniMapWorldMapButton:Hide();
-	end
+	--if bachMBF.db.profile.MBFHideMiniMapWorldMapButton == true then
+		--MiniMapWorldMapButton:Hide();
+	--end
 	if bachMBF.db.profile.MBFHideMinimapZoomIn  == true then
         Minimap.ZoomIn.Show = function() end;
         Minimap.ZoomOut.Show = function() end;
@@ -1947,8 +1955,8 @@ function MBFC_KeepBlizzHidden()
 		Minimap.ZoomOut:Hide();
 	end
 	if bachMBF.db.profile.MBFHideMiniMapMailFrame == true then
-		MiniMapMailFrame:Hide();
-		MiniMapMailFrameDisabled:Hide();	
+		MinimapCluster.MailFrame:Hide();
+		--Minimap.MailFrameDisabled:Hide();	
 	end
 	if bachMBF.db.profile.MBFHideGameTimeFrame == true then
 		GameTimeFrame:Hide();
