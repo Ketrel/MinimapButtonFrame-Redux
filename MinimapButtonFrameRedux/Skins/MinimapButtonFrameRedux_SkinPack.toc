@@ -1,8 +1,8 @@
-## Interface: 100000
+## Interface: 100002
 ## Title: Minimap Button Frame Skin Pack
 ## Notes: Skin Pack for MinimapButtonFrame.
 ## Author: Bachlott
-## Version: 2.0.1
+## Version: 2.0.2
 ## OptionalDeps: MBF
 ## X-Category: Interface Enhancements
 ## X-Date: 2021-10-29
