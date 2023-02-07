@@ -979,7 +979,6 @@ function bachMBF:OnDragStop()
 		MinimapButtonFrame:StopMovingOrSizing();
 		MinimapButtonFrame.isMoving = false;
 		MinimapButtonFrame:SetUserPlaced(false);
-		MinimapButtonFrame:SetFrameLevel(2);
 		
 		bachMBF:SavePosition();
 	end
@@ -1068,7 +1067,6 @@ function setMBFLocation()
 
 		MinimapButtonFrame:ClearAllPoints();
 		MinimapButtonFrame:SetPoint(bPoint, UIParent, bRelativePoint, bXofs, bYofs);
-		MinimapButtonFrame:SetFrameLevel(2);
 		MinimapButtonFrame:SetUserPlaced(false);
 	end
 end
@@ -1770,8 +1768,9 @@ function updatePositions()
 
 		if ((buttonName ~= "MinimapButtonFrameDragButton") and (buttonName ~= "MiniMapMailFrameDisabled") and (miniButton ~= nil) and (((MinimapButtonFrame:IsShown()) and (buttonName == "MiniMapMailFrame") or (miniButton:IsShown())))) then
 			
-			miniButton:SetFrameStrata("MEDIUM");
-			miniButton:SetFrameLevel(MinimapButtonFrame:GetFrameLevel() + 1);
+            miniButton:SetFrameStrata(MinimapButtonFrame:GetFrameStrata())
+            miniButton:SetFixedFrameLevel(false)
+			miniButton:SetFrameLevel(MinimapButtonFrame:GetFrameLevel() + 1)
 			
 			if ((mod(iterator-1,bachMBF.db.profile.columns_or_rows) == 0) and iterator > 1) then
 				if (bachMBF.db.profile.sort_by_rows) then
@@ -2013,7 +2012,7 @@ function MBFC_RollUp(setting)
 		MBFRestoreButton:ClearAllPoints();
 		MBFRestoreButton:SetPoint(MinimapButtonFrameDragButton:GetPoint());
 		MBFRestoreButton:Show();
-		MBFRestoreButton:SetFrameLevel(MinimapButtonFrameDragButton:GetFrameLevel());
+		--MBFRestoreButton:SetFrameLevel(MinimapButtonFrameDragButton:GetFrameLevel());
 		MBFRestoreButton:SetFrameStrata(MinimapButtonFrameDragButton:GetFrameStrata());
 		bachMBF.db.profile.rollUp = true;
 		bachMBF.db.profile.mbfHidden = true;
@@ -2100,7 +2099,7 @@ function bachMBF:SwapTitleLocation()
 
 	MBFRestoreButton:ClearAllPoints();
 	MBFRestoreButton:SetPoint(MinimapButtonFrameDragButton:GetPoint());
-	MBFRestoreButton:SetFrameLevel(MinimapButtonFrameDragButton:GetFrameLevel());
+	--MBFRestoreButton:SetFrameLevel(MinimapButtonFrameDragButton:GetFrameLevel());
 	MBFRestoreButton:SetFrameStrata(MinimapButtonFrameDragButton:GetFrameStrata());
 end
 

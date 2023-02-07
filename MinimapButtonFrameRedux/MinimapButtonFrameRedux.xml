@@ -1,6 +1,6 @@
 ﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 
-<Frame name="MinimapButtonFrame" toplevel="true" parent="UIParent" movable="true" clampedToScreen="true" hidden="false" frameStrata="MEDIUM" inherits="BackdropTemplate" >-->
+<Frame name="MinimapButtonFrame" toplevel="true" parent="UIParent" movable="true" clampedToScreen="true" hidden="false" frameStrata="MEDIUM" frameLevel="10" inherits="BackdropTemplate">
 	<Size x="20" y="20"/>
 	<Anchors>
 		<Anchor point="CENTER"/>
@@ -19,7 +19,7 @@
   </Backdrop>
   -->
   <Frames>
-	<Button name="$parentDragButton" inherits="UIPanelButtonTemplate">
+	<Button name="$parentDragButton" inherits="UIPanelButtonTemplate" frameLevel="11">
 		<NormalTexture name="MBFDragNormal"/>
 		<PushedTexture name="MBFDragPushed"/>
 		<Size>
@@ -119,7 +119,7 @@
   </Scripts>
 </Frame>
 
-<Frame name="MBFRestoreButtonFrame" parent="UIParent" enableMouse="true" movable="true" hidden="false" clampedToScreen="true" frameStrata="LOW">
+<Frame name="MBFRestoreButtonFrame" parent="UIParent" enableMouse="true" movable="true" hidden="false" clampedToScreen="true" frameStrata="MEDIUM" frameLevel="11">
     <!--
 	<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="false">
 	    <BackgroundInsets>
