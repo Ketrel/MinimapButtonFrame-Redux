@@ -145,7 +145,7 @@
 		</Anchor>
 	</Anchors>
 	<Frames>
-	<Button name="MBFRestoreButton" hidden="true" inherits="UIPanelButtonTemplate">
+	<Button name="MBFRestoreButton" hidden="true" inherits="UIPanelButtonTemplate" frameLevel="12">
 		<NormalTexture name="MBFRestoreNormal"/>
 		<PushedTexture name="MBFRestorePushed"/>
 		<Size>
