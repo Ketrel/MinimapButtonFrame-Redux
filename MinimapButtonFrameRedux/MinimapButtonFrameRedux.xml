@@ -19,7 +19,7 @@
   </Backdrop>
   -->
   <Frames>
-	<Button name="$parentDragButton" inherits="UIPanelButtonTemplate" frameLevel="11">
+	<Button name="$parentDragButton" inherits="UIPanelButtonTemplate" frameLevel="12">
 		<NormalTexture name="MBFDragNormal"/>
 		<PushedTexture name="MBFDragPushed"/>
 		<Size>
