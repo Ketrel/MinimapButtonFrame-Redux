@@ -2,7 +2,7 @@
 ## Title: Minimap Button Frame Skin Pack
 ## Notes: Skin Pack for MinimapButtonFrame.
 ## Author: Bachlott
-## Version: 3.0.0
+## Version: 3.2.1
 ## OptionalDeps: MBF
 ## X-Category: Interface Enhancements
 ## X-Date: 2023-03-22
