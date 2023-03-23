@@ -2015,8 +2015,8 @@ function MBFC_RollUp(setting)
 		MBFRestoreButton:Show();
 		MBFRestoreButton:SetFrameLevel(MinimapButtonFrameDragButton:GetFrameLevel());
 		MBFRestoreButton:SetFrameStrata(MinimapButtonFrameDragButton:GetFrameStrata());
-        MBFRestoreButtonFrame:ClearAllPoints();
-        MBFRestoreButtonFrame:SetPoint(MinimapButtonFrame:GetPoint());
+        --MBFRestoreButtonFrame:ClearAllPoints();
+        --MBFRestoreButtonFrame:SetPoint(MinimapButtonFrame:GetPoint());
         MBFRestoreButtonFrame:Show();
 		bachMBF.db.profile.rollUp = true;
 		bachMBF.db.profile.mbfHidden = true;
@@ -2025,6 +2025,7 @@ function MBFC_RollUp(setting)
 		MinimapButtonFrameDragButton:ClearAllPoints();
 		MinimapButtonFrameDragButton:SetPoint(MBFRestoreButton:GetPoint());
 		MBFRestoreButton:Hide();
+        MBFRestoreButtonFrame:Hide();
 		bachMBF.db.profile.rollUp = false;
 		bachMBF.db.profile.mbfHidden = false;
 		MinimapButtonFrame:Show();
