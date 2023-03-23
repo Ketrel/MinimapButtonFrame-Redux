@@ -850,8 +850,9 @@ function bachMBF:Init()
 		MBFRestoreButtonFrame:Hide();
 	end
 	if bachMBF.db.profile.rollUp then
-		MBFRestoreButton:Show();
-		MBFRestoreButtonFrame:Show();
+        MBFC_RollUp(1) --Was collapsed, so collapse again
+    else
+        MBFC_RollUp(2) --Was expanded, so expand again
 	end
 
 
@@ -2008,7 +2009,7 @@ function MBFC_ColorLocked()
 end
 
 function MBFC_RollUp(setting)
-	if (setting == 1) then
+	if (setting == 1) then --1 means collapse
 		MBFRestoreButton:ClearAllPoints();
 		MBFRestoreButton:SetPoint(MinimapButtonFrameDragButton:GetPoint());
 		MBFRestoreButton:Show();
@@ -2017,7 +2018,7 @@ function MBFC_RollUp(setting)
 		bachMBF.db.profile.rollUp = true;
 		bachMBF.db.profile.mbfHidden = true;
 		MinimapButtonFrame:Hide();
-	elseif (setting == 2) then
+	elseif (setting == 2) then --2 means expand
 		MinimapButtonFrameDragButton:ClearAllPoints();
 		MinimapButtonFrameDragButton:SetPoint(MBFRestoreButton:GetPoint());
 		MBFRestoreButton:Hide();
