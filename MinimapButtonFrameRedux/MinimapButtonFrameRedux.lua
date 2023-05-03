@@ -1,4 +1,4 @@
-MBFversion = GetAddOnMetadata("MinimapButtonFrame", "Version");
+MBFversion = GetAddOnMetadata("MinimapButtonFrameRedux", "Version");
 --MBF_DRAGTITLE = "MBF " .. MBFversion;
 MBF_DRAGTITLE = "MBF"
 
