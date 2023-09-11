@@ -1,4 +1,4 @@
-﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 
 <Frame name="MinimapButtonFrame" toplevel="true" parent="UIParent" movable="true" clampedToScreen="true" hidden="false" frameStrata="MEDIUM" frameLevel="10" inherits="BackdropTemplate">
     <Size x="20" y="20"/>

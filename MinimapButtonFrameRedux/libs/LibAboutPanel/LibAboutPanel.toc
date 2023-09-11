@@ -1,4 +1,4 @@
-﻿## Title: Lib: AboutPanel
+## Title: Lib: AboutPanel
 ## X-Curse-Packaged-Version: v1.43
 ## X-Curse-Project-Name: LibAboutPanel
 ## X-Curse-Project-ID: libaboutpanel
