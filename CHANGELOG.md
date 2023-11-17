@@ -1,3 +1,7 @@
+## v3.6.0
+
+* Author fix and TOC Bump
+
 ## v2.0.5
 
 * Fixed handling the show/hide for the rest of the Blizzard Minimap buttons
