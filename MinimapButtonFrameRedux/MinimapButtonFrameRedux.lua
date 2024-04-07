@@ -1074,7 +1074,7 @@ end
 
 isInTable = function(tab, frameName)
 	for k,v in ipairs(tab) do
-		if (strlower(v) == strlower(frameName)) then
+		if frameName ~= nil and (strlower(v) == strlower(frameName)) then
 			return true;
 		end
 	end
