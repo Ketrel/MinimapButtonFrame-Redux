@@ -766,17 +766,18 @@ function bachMBF:OnInitialize()
     -- Called when the addon is loaded
 	self.db = LibStub("AceDB-3.0"):New("MBFDB", defaults, true)
 
-	if LibStub:GetLibrary("LibAboutPanel", true) then
-		self.optionsFrame = LibStub:GetLibrary("LibAboutPanel").new(nil, "Minimap Button Frame")
-	else
-		self:Print("Lib AboutPanel not loaded.")
-	end
+    --if LibStub:GetLibrary("LibAboutPanel", true) then
+    --    self.optionsFrame = LibStub:GetLibrary("LibAboutPanel").new(nil, "Minimap Button Frame")
+    --else
+    --    self:Print("Lib AboutPanel not loaded.")
+    --end
 
 	LibStub("AceConfig-3.0"):RegisterOptionsTable("MBF Display", display)
 	LibStub("AceConfig-3.0"):RegisterOptionsTable("MBF Gathering", gathering)
 	LibStub("AceConfig-3.0"):RegisterOptionsTable("MBF Exceptions", exceptions)
 	LibStub("AceConfig-3.0"):RegisterOptionsTable("MBF Sorting", sorting)
 	LibStub("AceConfig-3.0"):RegisterOptionsTable("MBF Profiles", LibStub("AceDBOptions-3.0"):GetOptionsTable(self.db))
+    LibStub("AceConfigDialog-3.0"):AddToBlizOptions("MinimapButtonFrame", "MinimapButtonFrame")
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions("MBF Display", L["Display"], "MinimapButtonFrame")
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions("MBF Gathering", L["Gathering"], "MinimapButtonFrame")
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions("MBF Exceptions", L["Exceptions"], "MinimapButtonFrame")

@@ -1,4 +1,4 @@
-## Interface: 100206
+## Interface: 110000
 ## Title: Minimap Button Frame Redux
 ## Notes: Collects the minimap buttons and puts them into a moveable frame.
 ## Notes-deDE: Sammelt die Minikarte Tasten und stellt sie in einen beweglichen Rahmen.
@@ -9,11 +9,11 @@
 ## Notes-zhCN: 收集minimap按钮和使他们成为一个可移动的框架。
 ## Notes-zhTW: 收集minimap按鈕和使他們成為一個可移動的框架。
 ## Author: Ketrel/Marquista
-## Version: 3.7.0
+## Version: 4.0.0
 ## SavedVariables: MBFDB
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibAboutPanel
 ## X-Embeds: Ace3, LibDataBroker-1.1, LibAboutPanel
-## X-Date: 2024-04-06
+## X-Date: 2024-07-24
 ## X-Category: Interface Enhancements
 ## X-Localizations: enUS, deDE, frFR, esES, koKR, ruRU, zhCN, zhTW
 ## X-Former-Author: Bachlott 
