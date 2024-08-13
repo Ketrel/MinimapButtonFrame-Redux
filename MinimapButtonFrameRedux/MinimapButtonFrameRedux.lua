@@ -1,4 +1,4 @@
-MBFversion = GetAddOnMetadata("MinimapButtonFrameRedux", "Version");
+MBFversion = C_AddOns.GetAddOnMetadata("MinimapButtonFrameRedux", "Version");
 --MBF_DRAGTITLE = "MBF " .. MBFversion;
 MBF_DRAGTITLE = "MBF"
 

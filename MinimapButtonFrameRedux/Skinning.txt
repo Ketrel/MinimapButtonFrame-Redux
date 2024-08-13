@@ -1,3 +1,5 @@
+### This is outdated ###
+
 To Add a skin to the list in MBF use the function
 
 MBFAddSkin( "NAME", "BorderPath" , "BackdropPath", size)

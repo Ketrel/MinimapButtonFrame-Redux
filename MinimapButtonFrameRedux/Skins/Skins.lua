@@ -1,4 +1,4 @@
-if not IsAddOnLoaded("MinimapButtonFrameRedux") then
+if not C_AddOns.IsAddOnLoaded("MinimapButtonFrameRedux") then
 	return
 else
 
