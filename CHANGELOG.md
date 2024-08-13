@@ -1,3 +1,18 @@
+## v4.0.2  
+
+* Fixes depreciated functions for 11.0.2
+* Updates TOC for 11.0.2
+
+## v4.0.0
+
+* Fixes #19  
+* Updates TOC for 11.0.0
+
+## v3.7.0
+
+* Fixes #18  
+* Updates TOC for 10.2.6  
+
 ## v3.6.0
 
 * Author fix and TOC Bump
