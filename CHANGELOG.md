@@ -1,3 +1,6 @@
+## v5.0.0  
+* Initial ToC and version bump for Midnight  
+
 ## v4.0.2  
 
 * Fixes depreciated functions for 11.0.2
