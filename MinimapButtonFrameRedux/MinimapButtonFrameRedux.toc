@@ -1,4 +1,4 @@
-## Interface: 120000
+## Interface: 120000,120001
 ## Title: Minimap Button Frame Redux
 ## Notes: Collects the minimap buttons and puts them into a moveable frame.
 ## Notes-deDE: Sammelt die Minikarte Tasten und stellt sie in einen beweglichen Rahmen.
@@ -13,7 +13,7 @@
 ## SavedVariables: MBFDB
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibAboutPanel
 ## X-Embeds: Ace3, LibDataBroker-1.1, LibAboutPanel
-## X-Date: 2025-11-24
+## X-Date: 2026-01-21
 ## X-Category: Interface Enhancements
 ## X-Localizations: enUS, deDE, frFR, esES, koKR, ruRU, zhCN, zhTW
 ## X-Former-Author: Bachlott 

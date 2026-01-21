@@ -1,10 +1,10 @@
-## Interface: 110002
+## Interface: 120000,120001
 ## Title: Minimap Button Frame Skin Pack
 ## Notes: Skin Pack for MinimapButtonFrame.
 ## Author: Bachlott
-## Version: 4.0.2
+## Version: 5.0.0
 ## OptionalDeps: MBF
 ## X-Category: Interface Enhancements
-## X-Date: 2024-08-13
+## X-Date: 2026-01-21
 
 Skins.lua
