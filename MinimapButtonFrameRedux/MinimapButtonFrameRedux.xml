@@ -84,9 +84,11 @@
                 </Layer>
             </Layers>
             <Scripts>
+                <!--
                 <OnLoad>
                     SetDesaturation(getglobal("MiniMapMailFrameDisabledNoMail"), 1);
                 </OnLoad>
+                -->
                 <OnEnter>
                     NoMail_OnEnter();
                 </OnEnter>
